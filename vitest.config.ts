@@ -16,11 +16,5 @@ export default mergeConfig(
         external: ['@primevue/themes'],
       },
     },
-    resolve: {
-      alias: {
-        // Asegúrate de resolver correctamente las rutas
-        '@primevue/themes': fileURLToPath(new URL('./node_modules/@primevue/themes', import.meta.url)),
-      },
-    },
   })
 );

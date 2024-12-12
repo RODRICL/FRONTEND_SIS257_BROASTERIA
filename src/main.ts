@@ -4,7 +4,6 @@ import { createPinia } from 'pinia';
 import PrimeVue from 'primevue/config';
 
 // Importa los estilos necesarios
-import './assets/themes/aura.css';
 import 'primeicons/primeicons.css'; // Iconos de PrimeVue
 
 // Importa tu aplicación principal y el enrutador

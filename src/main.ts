@@ -1,22 +1,20 @@
-//import './assets/main.css'
+// Importa estilos y librerías en el orden correcto
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import PrimeVue from 'primevue/config';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import PrimeVue from 'primevue/config'
-import Aura from '@primevue/themes/Aura'
-import 'primeicons/primeicons.css'
+// Importa los estilos necesarios
+import './assets/themes/aura.css';
+import 'primeicons/primeicons.css'; // Iconos de PrimeVue
 
-import App from './App.vue'
-import router from './router'
+// Importa tu aplicación principal y el enrutador
+import App from './App.vue';
+import router from './router';
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router)
-app.use(PrimeVue, {
-  theme: {
-    preset: Aura,
-  },
-})
+app.use(createPinia());
+app.use(router);
+app.use(PrimeVue);
 
-app.mount('#app')
+app.mount('#app');
